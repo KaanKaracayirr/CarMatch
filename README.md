@@ -1,50 +1,72 @@
 # Flutter Projesi
 
-![İstinye Üniversitesi](https://upload.wikimedia.org/wikipedia/commons/d/d9/%C4%B0stinye_%C3%9Cniversitesi_logo.svg)
+[İstinye Üniversitesi](https://upload.wikimedia.org/wikipedia/commons/d/d9/%C4%B0stinye_%C3%9Cniversitesi_logo.svg)
 
-Proje Hakkında
+ ## Proje Hakkında
+
 [kullanıcı tarafından istenilen araba özellikleri girildikten sonra kıyaslamaya yarayan bir uygulama]
 
-Ekibimiz
-Danışman:
-[https://github.com/keyvanarasteh](Keyvan Arasteh)
+## Ekibimiz
 
-Takım Üyeleri:
+-   **Danışman:**  
+   [https://github.com/keyvanarasteh](Keyvan Arasteh)
+    
+-   **Takım Üyeleri:**
+    
+-   Kaan Karaçayır [GitHub](https://github.com/KaanKaracayirr)
+    
 
-Kaan Karaçayır [GitHub](https://github.com/KaanKaracayirr)
+## Özellikler
 
-Özellikler
-[Kullanıcı kolay bir şekilde istediği arabaları karşılaştırabilecek.]
+-   [Kullanıcı kolay bir şekilde istediği arabaları karşılaştırabilecek.]
+    
+-   [Kullanıcı eposta adresi ile kayıt yapıp giriş yapabilecek]
+    
+-   [Uygulamada gece ve gündüz modu olacak]
+    
 
-[Kullanıcı eposta adresi ile kayıt yapıp giriş yapabilecek]
+## Kullanılan Teknolojiler
 
-[Uygulamada gece ve gündüz modu olacak]
+-   Flutter
+    
+-   Dart
+    
+-   [Diğer teknolojiler]
+    
 
-Kullanılan Teknolojiler
-Flutter
+## Başlangıç
 
-Dart
 
-[Diğer teknolojiler]
+### Gereksinimler
 
-Başlangıç
-Gereksinimler
-Flutter SDK (sürüm X.X.X)
+-   Flutter SDK (sürüm X.X.X)
+    
+-   Dart SDK (sürüm X.X.X)
+    
+-   [Diğer gerekli yazılımlar]
+    
 
-Dart SDK (sürüm X.X.X)
+### Kurulum Adımları
 
-[Diğer gerekli yazılımlar]
+1.  Projeyi bilgisayarınıza indirin:
 
-Kurulum Adımları
-Projeyi bilgisayarınıza indirin:
 git  clone [proje-adresi]
-Proje klasörüne gidin:
+
+2.  Proje klasörüne gidin:
+
 cd [proje-adı]
-Gerekli paketleri yükleyin:
+
+3.  Gerekli paketleri yükleyin:
+
 flutter  pub  get
-Uygulamayı başlatın:
+
+4.  Uygulamayı başlatın:
+
 flutter  run
-Proje Yapısı
+
+## Proje Yapısı
+
+```
 
 lib/
 
@@ -58,29 +80,39 @@ lib/
 
 └── yardımcılar/ # Yardımcı fonksiyonlar
 
-Ekran Görüntüleri
+
+```
+
+## Ekran Görüntüleri
+
 [Uygulama ekran görüntüleri buraya eklenecek]
 
-Projeye Katkı Sağlama
-Projeyi forklayın
+## Projeye Katkı Sağlama
 
-Yeni bir dal oluşturun (git checkout -b ozellik/YeniOzellik)
+1.  Projeyi forklayın
+    
+2.  Yeni bir dal oluşturun (`git checkout -b ozellik/YeniOzellik`)
+    
+3.  Değişikliklerinizi kaydedin (`git commit -m 'Yeni özellik eklendi'`)
+    
+4.  Dalınıza gönderin (`git push origin ozellik/YeniOzellik`)
+    
+5.  Pull Request oluşturun
+    
 
-Değişikliklerinizi kaydedin (git commit -m 'Yeni özellik eklendi')
+## Lisans
 
-Dalınıza gönderin (git push origin ozellik/YeniOzellik)
+[Lisans türü] kapsamında lisanslanmıştır. Daha fazla bilgi için  `LICENSE`  dosyasını inceleyebilirsiniz.
 
-Pull Request oluşturun
+## İletişim
 
-Lisans
-[Lisans türü] kapsamında lisanslanmıştır. Daha fazla bilgi için LICENSE dosyasını inceleyebilirsiniz.
+-   Proje Bağlantısı: [GitHub repository linki]
+    
+-   İstinye Üniversitesi:  [https://www.istinye.edu.tr/](https://www.istinye.edu.tr/)
+    
 
-İletişim
-Proje Bağlantısı: [GitHub repository linki]
+## Teşekkürler
 
-İstinye Üniversitesi: https://www.istinye.edu.tr/
-
-Teşekkürler
-İstinye Üniversitesi'ne destekleri için teşekkür ederiz
-
-[Diğer teşekkürler]
+-   İstinye Üniversitesi'ne destekleri için teşekkür ederiz
+    
+-   [Diğer teşekkürler]
