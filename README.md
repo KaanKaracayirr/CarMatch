@@ -1,6 +1,6 @@
 # Flutter Projesi
 
-[İstinye Üniversitei](https://www.unitededucation.com/linklogoch/istinye-university-logo.png)
+![İstinye Üniversitei](https://www.unitededucation.com/linklogoch/istinye-university-logo.png)
 
  ## Proje Hakkında
 
