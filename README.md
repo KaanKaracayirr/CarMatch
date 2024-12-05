@@ -1,2 +1,3 @@
-# Flutter_Project
-My Flutter App
+# flutter_app
+
+A new Flutter project.
