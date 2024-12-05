@@ -1,5 +1,7 @@
+import 'package:dotlottie_loader/dotlottie_loader.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:lottie/lottie.dart';
 
 class LoadingScreen extends StatelessWidget {
   const LoadingScreen({super.key});
@@ -8,48 +10,38 @@ class LoadingScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 252, 252, 252),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+      body: SizedBox.expand(
+          child: Column(
         children: [
-          // Logo ve yükleme göstergesi bölümü
-          Container(
-            width: double.infinity,
-            child: Column(
-              children: [
-                // Logo bölümü
-                Container(
-                  width: 200,
-                  height: 200,
-                  child: Image.asset(
-                    'assets/images/logo.webp',
-                    fit: BoxFit.contain,
-                  ),
-                ),
+          // Logo bölümü
+          Expanded(
+            child: Container(
+              width: 250,
+              height: 250,
+              child: Image.asset(
+                'assets/images/logo.webp',
+                fit: BoxFit.contain,
+              ),
+            ),
+          ),
 
-                const SizedBox(height: 30),
+          CircularProgressIndicator(),
 
-                // Yükleme ikonu
-                const Icon(
-                  CupertinoIcons.arrow_2_circlepath,
-                  size: 40,
-                  color: Color.fromARGB(255, 8, 0, 255),
-                ),
-
-                const SizedBox(height: 20),
-
-                // Yükleniyor yazısı
-                const Text(
-                  'Yükleniyor...',
-                  style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
-              ],
+          SizedBox(
+            width: 300,
+            child: DotLottieLoader.fromAsset(
+              "assets/motions/loading.lottie",
+              frameBuilder: (BuildContext ctx, DotLottie? dotlottie) {
+                if (dotlottie != null) {
+                  return Lottie.memory(dotlottie.animations.values.single);
+                } else {
+                  return Container();
+                }
+              },
             ),
           ),
         ],
-      ),
+      )),
     );
   }
 }
