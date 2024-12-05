@@ -1,3 +1,86 @@
-# flutter_app
+# Flutter Projesi
 
-A new Flutter project.
+![İstinye Üniversitesi](https://upload.wikimedia.org/wikipedia/commons/d/d9/%C4%B0stinye_%C3%9Cniversitesi_logo.svg)
+
+Proje Hakkında
+[kullanıcı tarafından istenilen araba özellikleri girildikten sonra kıyaslamaya yarayan bir uygulama]
+
+Ekibimiz
+Danışman:
+[https://github.com/keyvanarasteh](Keyvan Arasteh)
+
+Takım Üyeleri:
+
+Kaan Karaçayır [GitHub](https://github.com/KaanKaracayirr)
+
+Özellikler
+[Kullanıcı kolay bir şekilde istediği arabaları karşılaştırabilecek.]
+
+[Kullanıcı eposta adresi ile kayıt yapıp giriş yapabilecek]
+
+[Uygulamada gece ve gündüz modu olacak]
+
+Kullanılan Teknolojiler
+Flutter
+
+Dart
+
+[Diğer teknolojiler]
+
+Başlangıç
+Gereksinimler
+Flutter SDK (sürüm X.X.X)
+
+Dart SDK (sürüm X.X.X)
+
+[Diğer gerekli yazılımlar]
+
+Kurulum Adımları
+Projeyi bilgisayarınıza indirin:
+git  clone [proje-adresi]
+Proje klasörüne gidin:
+cd [proje-adı]
+Gerekli paketleri yükleyin:
+flutter  pub  get
+Uygulamayı başlatın:
+flutter  run
+Proje Yapısı
+
+lib/
+
+├── modeller/ # Veri modelleri
+
+├── ekranlar/ # Uygulama ekranları
+
+├── widgets/ # Tekrar kullanılabilir arayüz öğeleri
+
+├── servisler/ # API servisleri
+
+└── yardımcılar/ # Yardımcı fonksiyonlar
+
+Ekran Görüntüleri
+[Uygulama ekran görüntüleri buraya eklenecek]
+
+Projeye Katkı Sağlama
+Projeyi forklayın
+
+Yeni bir dal oluşturun (git checkout -b ozellik/YeniOzellik)
+
+Değişikliklerinizi kaydedin (git commit -m 'Yeni özellik eklendi')
+
+Dalınıza gönderin (git push origin ozellik/YeniOzellik)
+
+Pull Request oluşturun
+
+Lisans
+[Lisans türü] kapsamında lisanslanmıştır. Daha fazla bilgi için LICENSE dosyasını inceleyebilirsiniz.
+
+İletişim
+Proje Bağlantısı: [GitHub repository linki]
+
+İstinye Üniversitesi: https://www.istinye.edu.tr/
+
+Teşekkürler
+İstinye Üniversitesi'ne destekleri için teşekkür ederiz
+
+[Diğer teşekkürler]
