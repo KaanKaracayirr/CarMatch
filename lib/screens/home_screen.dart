@@ -1,7 +1,12 @@
 import 'package:dotlottie_loader/dotlottie_loader.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter_app/core/constants.dart';
+import 'package:flutter_app/core/routes.dart';
+import 'package:go_router/go_router.dart';
 import 'package:lottie/lottie.dart';
+
+import '../widgets/bottommenu.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -9,10 +14,10 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 25, 136, 255),
+      backgroundColor: anamenurenkim,
       // AppBar
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 25, 136, 255),
+        backgroundColor: anamenurenkim,
         title: const Text('CarMatch'),
         actions: [
           IconButton(
@@ -24,7 +29,7 @@ class HomeScreen extends StatelessWidget {
 
       // Drawer (Yan Menü)
       drawer: Drawer(
-        backgroundColor: Colors.white,
+        backgroundColor: yanmenurenkim,
         elevation: 0,
         child: Column(
           children: [
@@ -52,28 +57,29 @@ class HomeScreen extends StatelessWidget {
               leading: const Icon(CupertinoIcons.person),
               title: const Text('Profil'),
               onTap: () {
-                Navigator.pop(context);
+                context.go('/profile');
               },
             ),
             ListTile(
               leading: const Icon(CupertinoIcons.flag),
               title: const Text('Dil Ayarları'),
               onTap: () {
-                Navigator.pop(context);
+                context.go('/dilayarlari');
               },
             ),
             ListTile(
               leading: const Icon(CupertinoIcons.moon),
               title: const Text('Gece Modu'),
               onTap: () {
-                Navigator.pop(context);
+                context.go('/gecemodu');
               },
             ),
             ListTile(
               leading: const Icon(CupertinoIcons.power),
               title: const Text('Çıkış'),
               onTap: () {
-                Navigator.pop(context);
+                context.go('/cikis');
+                ;
               },
             ),
           ],
@@ -105,30 +111,7 @@ class HomeScreen extends StatelessWidget {
       ),
 
       // Alt navigasyon çubuğu
-      bottomNavigationBar: Container(
-        height: 70,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: [
-            IconButton(
-              onPressed: () {},
-              icon: Icon(CupertinoIcons.car),
-            ),
-            IconButton(
-              onPressed: () {},
-              icon: Icon(CupertinoIcons.money_dollar),
-            ),
-            IconButton(
-              onPressed: () {},
-              icon: Icon(CupertinoIcons.home),
-            ),
-            IconButton(
-              onPressed: () {},
-              icon: Icon(CupertinoIcons.shuffle),
-            ),
-          ],
-        ),
-      ),
+      bottomNavigationBar: bottommenu(),
     );
   }
 }
