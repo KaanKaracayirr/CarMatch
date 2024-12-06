@@ -35,7 +35,7 @@ class HomeScreen extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  const Icon(CupertinoIcons.person_circle,
+                  const Icon(CupertinoIcons.house_fill,
                       size: 80, color: Colors.black),
                 ],
               ),
@@ -56,7 +56,7 @@ class HomeScreen extends StatelessWidget {
               },
             ),
             ListTile(
-              leading: const Icon(CupertinoIcons.settings),
+              leading: const Icon(CupertinoIcons.flag),
               title: const Text('Dil Ayarları'),
               onTap: () {
                 Navigator.pop(context);
@@ -70,7 +70,7 @@ class HomeScreen extends StatelessWidget {
               },
             ),
             ListTile(
-              leading: const Icon(CupertinoIcons.exclamationmark_octagon),
+              leading: const Icon(CupertinoIcons.power),
               title: const Text('Çıkış'),
               onTap: () {
                 Navigator.pop(context);
@@ -105,26 +105,30 @@ class HomeScreen extends StatelessWidget {
       ),
 
       // Alt navigasyon çubuğu
-      bottomNavigationBar: BottomNavigationBar(
-        items: const [
-          BottomNavigationBarItem(
-            icon: Icon(CupertinoIcons.home),
-            label: 'Ana Sayfa',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(CupertinoIcons.search),
-            label: 'Keşfet',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(CupertinoIcons.person),
-            label: 'Profil',
-          ),
-        ],
-        onTap: (index) {
-          // Navigasyon işlemleri buraya gelecek
-        },
+      bottomNavigationBar: Container(
+        height: 70,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            IconButton(
+              onPressed: () {},
+              icon: Icon(CupertinoIcons.car),
+            ),
+            IconButton(
+              onPressed: () {},
+              icon: Icon(CupertinoIcons.money_dollar),
+            ),
+            IconButton(
+              onPressed: () {},
+              icon: Icon(CupertinoIcons.home),
+            ),
+            IconButton(
+              onPressed: () {},
+              icon: Icon(CupertinoIcons.shuffle),
+            ),
+          ],
+        ),
       ),
     );
-    // Ana içerik
   }
 }
