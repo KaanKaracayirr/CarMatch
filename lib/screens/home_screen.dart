@@ -1,5 +1,7 @@
+import 'package:dotlottie_loader/dotlottie_loader.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:lottie/lottie.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -7,10 +9,11 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 252, 252, 252),
+      backgroundColor: const Color.fromARGB(255, 25, 136, 255),
       // AppBar
       appBar: AppBar(
-        title: const Text('Ana Sayfa'),
+        backgroundColor: const Color.fromARGB(255, 25, 136, 255),
+        title: const Text('CarMatch'),
         actions: [
           IconButton(
             icon: const Icon(CupertinoIcons.bell),
@@ -21,28 +24,19 @@ class HomeScreen extends StatelessWidget {
 
       // Drawer (Yan Menü)
       drawer: Drawer(
+        backgroundColor: Colors.white,
+        elevation: 0,
         child: Column(
           children: [
             // Drawer Header
             Container(
               height: 200,
-              color: Colors.blue,
+              //color: Colors.blue
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  const Icon(
-                    CupertinoIcons.person_circle,
-                    size: 80,
-                    color: Colors.white,
-                  ),
-                  const SizedBox(height: 10),
-                  const Text(
-                    'Kullanıcı Adı',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 18,
-                    ),
-                  ),
+                  const Icon(CupertinoIcons.person_circle,
+                      size: 80, color: Colors.black),
                 ],
               ),
             ),
@@ -55,8 +49,29 @@ class HomeScreen extends StatelessWidget {
               },
             ),
             ListTile(
+              leading: const Icon(CupertinoIcons.person),
+              title: const Text('Profil'),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
               leading: const Icon(CupertinoIcons.settings),
-              title: const Text('Ayarlar'),
+              title: const Text('Dil Ayarları'),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              leading: const Icon(CupertinoIcons.moon),
+              title: const Text('Gece Modu'),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              leading: const Icon(CupertinoIcons.exclamationmark_octagon),
+              title: const Text('Çıkış'),
               onTap: () {
                 Navigator.pop(context);
               },
@@ -71,7 +86,19 @@ class HomeScreen extends StatelessWidget {
           Expanded(
             child: Container(
               padding: const EdgeInsets.all(16),
-              child: const Text('Ana Sayfa İçeriği'),
+              child: SizedBox(
+                width: double.infinity,
+                child: DotLottieLoader.fromAsset(
+                  "assets/motions/q.lottie",
+                  frameBuilder: (BuildContext ctx, DotLottie? dotlottie) {
+                    if (dotlottie != null) {
+                      return Lottie.memory(dotlottie.animations.values.single);
+                    } else {
+                      return Container();
+                    }
+                  },
+                ),
+              ),
             ),
           ),
         ],
@@ -98,5 +125,6 @@ class HomeScreen extends StatelessWidget {
         },
       ),
     );
+    // Ana içerik
   }
 }
