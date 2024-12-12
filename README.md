@@ -40,9 +40,9 @@
 
 ### Gereksinimler
 
--   Flutter SDK (sürüm X.X.X)
+-   Flutter SDK (sürüm v3.102.0)
     
--   Dart SDK (sürüm X.X.X)
+-   Dart SDK (sürüm v3.102.0)
     
 -   [Diğer gerekli yazılımlar]
     
@@ -51,11 +51,11 @@
 
 1.  Projeyi bilgisayarınıza indirin:
 
-git  clone [proje-adresi]
+git  clone [https://github.com/KaanKaracayirr/CarMatch]
 
 2.  Proje klasörüne gidin:
 
-cd [proje-adı]
+cd [Flutter_Project]
 
 3.  Gerekli paketleri yükleyin:
 
