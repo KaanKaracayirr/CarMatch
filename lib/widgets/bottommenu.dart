@@ -22,9 +22,9 @@ class bottommenu extends StatelessWidget {
           ),
           IconButton(
             onPressed: () {
-              context.go('/aracfiyatlari');
+              context.go('/karsilastirma');
             },
-            icon: Icon(CupertinoIcons.money_dollar),
+            icon: Icon(CupertinoIcons.shuffle),
           ),
           IconButton(
             onPressed: () {
@@ -34,9 +34,9 @@ class bottommenu extends StatelessWidget {
           ),
           IconButton(
             onPressed: () {
-              context.go('/karsilastirma');
+              context.go('/profile');
             },
-            icon: Icon(CupertinoIcons.shuffle),
+            icon: Icon(CupertinoIcons.profile_circled),
           ),
         ],
       ),

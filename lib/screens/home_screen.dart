@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_app/core/constants.dart';
 import 'package:flutter_app/core/routes.dart';
+import 'package:flutter_app/core/themes.dart';
 import 'package:go_router/go_router.dart';
 import 'package:lottie/lottie.dart';
 
@@ -14,22 +15,16 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: anamenurenkim,
+      backgroundColor: colors["primary"],
       // AppBar
       appBar: AppBar(
-        backgroundColor: anamenurenkim,
+        backgroundColor: colors["secondary"],
         title: const Text('CarMatch'),
-        actions: [
-          IconButton(
-            icon: const Icon(CupertinoIcons.bell),
-            onPressed: () {},
-          ),
-        ],
       ),
 
       // Drawer (Yan Menü)
       drawer: Drawer(
-        backgroundColor: yanmenurenkim,
+        backgroundColor: colors["onPrimary"],
         elevation: 0,
         child: Column(
           children: [
@@ -54,13 +49,6 @@ class HomeScreen extends StatelessWidget {
               },
             ),
             ListTile(
-              leading: const Icon(CupertinoIcons.person),
-              title: const Text('Profil'),
-              onTap: () {
-                context.go('/profile');
-              },
-            ),
-            ListTile(
               leading: const Icon(CupertinoIcons.flag),
               title: const Text('Dil Ayarları'),
               onTap: () {
@@ -75,13 +63,19 @@ class HomeScreen extends StatelessWidget {
               },
             ),
             ListTile(
+              leading: const Icon(CupertinoIcons.bell),
+              title: const Text('Bildirimler'),
+              onTap: () {
+                context.go('/bildirimler');
+              },
+            ),
+            ListTile(
               leading: const Icon(CupertinoIcons.power),
               title: const Text('Çıkış'),
               onTap: () {
                 context.go('/cikis');
-                ;
               },
-            ),
+            )
           ],
         ),
       ),

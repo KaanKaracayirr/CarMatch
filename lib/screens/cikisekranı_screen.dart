@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/core/constants.dart';
+import 'package:flutter_app/core/themes.dart';
 import 'package:flutter_app/widgets/bottommenu.dart';
 
 class CikisekraniScreen extends StatelessWidget {
@@ -8,7 +9,7 @@ class CikisekraniScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: anamenurenkim,
+      backgroundColor: colors["primary"],
       body: Center(
         child: Text("Çıkış Ekranım."),
       ),
